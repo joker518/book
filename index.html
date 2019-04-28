@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>工作台</title>
+<link href="style/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- 效果库 -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<!-- 效果库 -->
+
+<script type="text/javascript">
+$(function(){	
+	$('.tabPanel ._tab li').click(function(){
+		$(this).addClass('hit').siblings().removeClass('hit');
+		$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+})
+</script>
+
+<style>
+a {
+	color: #999;
+}
+
+.div_search {
+	width: 650px;
+	height: 30px;
+	margin-top: 15px;
+	margin: 0 auto;
+}
+
+.input_search {
+	width: 500px;
+	height: 30px;
+	float: left;
+}
+
+.button_ok {
+	width: 100px;
+	height: 36px;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	background: #3385ff;
+	border: 0;
+	outline: medium;
+	float: left;
+}
+
+.img_photo {
+	width: 200px;
+}
+
+body {
+	background: url('./images/bg.png') top center no-repeat;
+	background-size: cover;
+}
+</style>
+</head>
+
+<body>
+	<div style="width: 1000px; margin: 10px auto; height: 743px;">
+		<script type="text/javascript" src="js/menu.js"></script>
+
+		<div class="main" style="margin-top:80px;">
+			<div class="div_search">
+				<div align="center">
+					<img src="./images/baidu.jpg" class="img_photo" />
+				</div>
+				<br /> <input id="wd" name="wd" form="search" type="text"
+					class="input_search" />
+				<button id="ok" name="ok" type="submit" value="提交" form="search"
+					class="button_ok">百度一下</button>
+			</div>
+
+			<form id="search" action="http://www.baidu.com/s" method="get">
+
+			</form>
+
+			<div class="right">
+				<div class="right1">
+					<ul class="gold2">
+						<li><a href="https://www.263.net/" target="_blank">263邮箱</a></li>
+						<li><a href="https://mail.163.com/" target="_blank">163邮箱</a></li>
+						<li><a
+							href="http://vp.csii.com.cn/tpl/login/index.html#/lllogin"
+							target="_blank">VP+</a></li>
+						<li><a href="http://115.182.90.212:9999/" target="_blank">禅道</a></li>
+						<br />
+						<li><a href="http://18.5.197.35:9080/EmdWeb/prelogin.do"
+							target="_blank">短信平台UAT</a></li>
+						<li><a href="http://18.5.197.30:9080/EmdWeb/prelogin.do"
+							target="_blank">短信平台SIT</a></li>
+						<li><a
+							href="http://18.5.198.168:8081/firefly/user/login.html?code=10&next="
+							target="_blank">FireFly</a></li>
+						<li><a href="https://github.com/" target="_blank">GitHup</a></li>
+
+					</ul>
+
+					<ul class="gold2">
+						<li><a href="https://ditu.amap.com/" target="_blank">高德地图</a></li>
+						<li><a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a></li>
+						<li><a href="https://www.toutiao.com/" target="_blank">今日头条</a></li>
+						<li><a href="https://mail.qq.com/cgi-bin/loginpage"
+							target="_blank">QQ邮箱</a></li>
+
+					</ul>
+				</div>
+</body>
+
+</html>
+
