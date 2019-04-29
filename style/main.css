@@ -1,7 +1,7 @@
 @charset "utf-8";
-*{ margin:0; padding:0; color:#333333;  font-family: font: 14px/100% arial,宋体; }
+*{ margin:0; padding:0; color:#333333; }
 body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,img{margin:0;padding:0; border:0}
-body,button,input,select,textarea{font:12px/1.5 "宋体" ,Simsun,"Arial Unicode MS",Mingliu,Helvetica;}
+body,button,input,select,textarea{font:14px/1.5 "宋体" ,Simsun,"Arial Unicode MS",Mingliu,Helvetica;}
 h1,h2,h3,h4,h5,h6{font-size:100%;}ul,ol{list-style:none;}
 ul,ol{list-style:none;}
 a{ target:_blank; color:#00F;}
@@ -15,7 +15,7 @@ a:active {text-decoration: none; }
 /*  right1*/
 .right1{ overflow:auto;    }
 .right1 .gold2 { overflow:auto; margin:1% 25%  1%  0 ;}
-.right1 .gold2 li { font-size:150%; font-weight:500; width:20%; float:left; margin:0 1% 0 1%; line-height:150%;}
+.right1 .gold2 li { font-size:125%; font-weight:100%; width:20%; float:left; margin:0 1% 0 1%; line-height:150%;}
 .right1 .gold2 li span{ color: white; }
 
 
