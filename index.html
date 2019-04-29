@@ -2,21 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <title>工作台</title>
 <link href="style/main.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <!-- 效果库 -->
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<!-- 效果库 -->
-
-<script type="text/javascript">
-$(function(){	
-	$('.tabPanel ._tab li').click(function(){
-		$(this).addClass('hit').siblings().removeClass('hit');
-		$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
-	})
-})
-</script>
 
 <style>
 a {
@@ -25,22 +16,25 @@ a {
 
 .div_search {
 	width: 650px;
-	height: 30px;
+	height: 40px;
 	margin-top: 15px;
 	margin: 0 auto;
 }
 
 .input_search {
 	width: 500px;
-	height: 30px;
+	height: 40px;
 	float: left;
+	font-size:150%;
+	font-weight:bold;
 }
 
 .button_ok {
 	width: 100px;
-	height: 36px;
+	height: 40px;
 	color: #fff;
-	font-size: 15px;
+	font-size: 20px;
+	font-weight:bold;
 	letter-spacing: 1px;
 	background: #3385ff;
 	border: 0;
@@ -53,14 +47,15 @@ a {
 }
 
 body {
-	background: url('./images/bg.png') top center no-repeat;
+	background: url('./images/bg1.jpg') top center no-repeat;
 	background-size: cover;
 }
+a:hover {color:#f08300; }
 </style>
 </head>
 
 <body>
-	<div style="width: 1000px; margin: 10px auto; height: 743px;">
+	<div style="width:100%; margin:auto; height: 100%;">
 		<script type="text/javascript" src="js/menu.js"></script>
 
 		<div class="main" style="margin-top:80px;">
@@ -74,39 +69,70 @@ body {
 					class="button_ok">百度一下</button>
 			</div>
 
-			<form id="search" action="http://www.baidu.com/s" method="get">
+			<form id="search" action="http://www.baidu.com/s" method="get" target="_blank">
 
 			</form>
 
 			<div class="right">
 				<div class="right1">
 					<ul class="gold2">
-						<li><a href="https://www.263.net/" target="_blank">263邮箱</a></li>
-						<li><a href="https://mail.163.com/" target="_blank">163邮箱</a></li>
-						<li><a
-							href="http://vp.csii.com.cn/tpl/login/index.html#/lllogin"
-							target="_blank">VP+</a></li>
-						<li><a href="http://115.182.90.212:9999/" target="_blank">禅道</a></li>
-						<br />
-						<li><a href="http://18.5.197.35:9080/EmdWeb/prelogin.do"
-							target="_blank">短信平台UAT</a></li>
-						<li><a href="http://18.5.197.30:9080/EmdWeb/prelogin.do"
-							target="_blank">短信平台SIT</a></li>
-						<li><a
-							href="http://18.5.198.168:8081/firefly/user/login.html?code=10&next="
-							target="_blank">FireFly</a></li>
-						<li><a href="https://github.com/" target="_blank">GitHup</a></li>
-
+						<li><a href="https://www.263.net/" target="_blank"><span>263邮箱</span></a></li>
+						<li><a href="https://mail.163.com/" target="_blank"><span>163邮箱</span></a></li>
+						<li><a href="http://vp.csii.com.cn/tpl/login/index.html#/lllogin" target="_blank"><span>VP+</span></a></li>
+						<li><a href="http://115.182.90.212:9999/" target="_blank"><span>禅道</span></a></li>
+						
 					</ul>
-
+					
 					<ul class="gold2">
-						<li><a href="https://ditu.amap.com/" target="_blank">高德地图</a></li>
-						<li><a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a></li>
-						<li><a href="https://www.toutiao.com/" target="_blank">今日头条</a></li>
-						<li><a href="https://mail.qq.com/cgi-bin/loginpage"
-							target="_blank">QQ邮箱</a></li>
+						<li><a href="https://github.com/" target="_blank"><span>GitHup</span></a></li>
+						<li><a href="https://www.csdn.net/" target="_blank"><span>CSDN </span></a></li>
+						<li><a href="https://www.google.com.hk/?spm=a2c4e.11153940.blogcont685539.11.2b2c4d395HOCYQ&gws_rd=ssl" target="_blank"><span>谷歌搜索</span></a></li>
+						<li><a href="https://www.jiumodiary.com/" target="_blank"><span>鸠摩搜书</span></a></li>
+						<li><a href="http://naotu.baidu.com/" target="_blank"><span>百度脑图 </span></a></li>
+						<li><a href="https://stackoverflow.com/" target="_blank"><span>stackcOverFlow </span></a></li>
+						<li><a href="https://gitlab.com/users/sign_in" target="_blank"><span>GitLab</span></a></li>
+						<li><a href="https://e.buaa.edu.cn/users/sign_in"
+							target="_blank"><span>北航内网VPN</span></a></li>
+					</ul>
+					
+					<ul class="gold2">
+						<li><a href="https://ditu.amap.com/" target="_blank"><span>高德地图</span></a></li>
+						<li><a href="https://www.iqiyi.com/" target="_blank"><span>爱奇艺</span></a></li>
+						<li><a href="https://www.toutiao.com/" target="_blank"><span>今日头条</span></a></li>
+						<li><a href="https://mail.qq.com/cgi-bin/loginpage" target="_blank"><span>QQ邮箱</span></a></li>
+						<li><a href="https://www.zhipin.com/" target="_blank"><span>Boss直聘</span></a></li>
 
 					</ul>
+					
+					<ul class="gold2">
+						<li><a href="https://github.com/getlantern/lantern" target="_blank"><span>蓝灯翻墙</span></a></li>
+						<li><a href="https://login.oray.com/" target="_blank"><span>花生壳翻墙</span></a></li>
+						<li><a href="http://encode.chahuo.com/" target="_blank"><span>在线加解密</span></a></li>
+						<li><a href="https://www.bejson.com/" target="_blank"><span>bejson</span></a></li>
+						<li><a href="http://www.luwayo.com/vip/?url=" target="_blank"><span>米卡视频解析</span></a></li>
+						<li><a href="http://17kyun.com/api.php?url=" target="_blank"><span>17kyun解析</span></a></li>
+
+					</ul>
+					
+					<ul class="gold2">
+						<li><a href="http://18.5.197.35:9080/EmdWeb/prelogin.do"
+							target="_blank"><span>短信平台UAT</span></a></li>
+						<li><a href="http://18.5.197.30:9080/EmdWeb/prelogin.do"
+							target="_blank"><span>短信平台SIT</span></a></li>
+						<li><a href="http://18.5.198.168:8081/firefly/user/login.html?code=10&next="
+							target="_blank"><span>FireFly</span></a></li>
+						<li><a href="https://18.5.197.184:9043/ibm/console/logon.jsp"
+							target="_blank"><span>184was</span></a></li>
+						<li><a href="http://18.5.197.184:9082/mweb"
+							target="_blank"><span>184内管</span></a></li>
+						<li><a href="https://18.5.200.188:9043/ibm/console/logon.jsp"
+							target="_blank"><span>188was</span></a></li>
+
+					</ul>
+					
+					
+					
+					
 				</div>
 </body>
 
