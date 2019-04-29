@@ -11,11 +11,11 @@ a:visited {text-decoration: none;}
 a:active {text-decoration: none; }
 .clear {clear: both;}
 
-.right{ float:left; width:980px;  margin-left:340px;margin-bottom:10px;}
+.right{ float:left; width:70%;  margin-left:27%;margin-bottom:10%;}
 /*  right1*/
 .right1{ overflow:auto;    }
-.right1 .gold2 { overflow:auto; margin:18px 220px 20px 40px;}
-.right1 .gold2 li { font-size:18px; font-weight:500; width:120px; float:left; margin:0 5px 0 5px; line-height:25px;}
+.right1 .gold2 { overflow:auto; margin:1% 25%  1%  0 ;}
+.right1 .gold2 li { font-size:150%; font-weight:500; width:20%; float:left; margin:0 1% 0 1%; line-height:150%;}
 .right1 .gold2 li span{ color: white; }
 
 
